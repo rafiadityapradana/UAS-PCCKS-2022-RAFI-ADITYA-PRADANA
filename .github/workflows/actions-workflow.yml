@@ -12,4 +12,4 @@ jobs:
           docker build -t rafiadityapradana/uas:latest -f Dockerfile .
 
       - name: push to dockerhub
-        run: docker login -u ${{secrets.rafiadityapradana}} -p ${{secrets.dckr_pat_3eRCMIvDq0c6GCkqDoTnEmdXI8w}} && docker push rafiadityapradana/uas:latest
+        run: docker login -u ${{secrets.rafiadityapradana}} -p ${{secrets.dckr_pat_mpn4moScq2NuPzZzvkBV-NVHUnY}} && docker push rafiadityapradana/uas:latest

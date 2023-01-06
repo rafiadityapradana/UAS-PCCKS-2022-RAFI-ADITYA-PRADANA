@@ -9,7 +9,7 @@ jobs:
 
       - name: build and tag image
         run: |
-          docker build -t rafiadityapradana/uas -f Dockerfile .
+          docker build -t rafiadityapradana/uas:latest -f Dockerfile .
 
       - name: push to dockerhub
-        run: docker login -u ${{rafiadityapradana}} -p ${{dckr_pat_mpn4moScq2NuPzZzvkBV-NVHUnY}} && docker push rafiadityapradana/uas
+        run: docker login -u ${{secrets.rafiadityapradana}} -p ${{secrets.dckr_pat_mpn4moScq2NuPzZzvkBV-NVHUnY}} && docker push rafiadityapradana/uas:latest

@@ -1,4 +1,4 @@
-name: GitHub Actions to Dockerhub
+name: GitHub Actions to Dockerhub Rafi
 run-name: ${{ github.actor }} Run GitHub Actions to upload docker image 🚀
 on: [push]
 jobs:
